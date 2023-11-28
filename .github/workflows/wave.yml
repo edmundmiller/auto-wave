@@ -59,10 +59,7 @@ jobs:
         run: |
           wave --conda-file "${{ matrix.files }}" \
               --freeze \
-              --await \
-              --build-repo quay.io/nf-core/modules/bowtie \
-              --tower-token ${{ secrets.TOWER_ACCESS_TOKEN }} \
-              --tower-workspace-id ${{ secrets.TOWER_WORKSPACE_ID }}
+              --await
 
       - name: Build Singularity
         if: matrix.profile == 'singularity'
@@ -70,9 +67,6 @@ jobs:
           wave --conda-file "${{ matrix.files }}" \
               --freeze \
               --await \
-              --build-repo quay.io/nf-core/modules/bowtie \
-              --tower-token ${{ secrets.TOWER_ACCESS_TOKEN }} \
-              --tower-workspace-id ${{ secrets.TOWER_WORKSPACE_ID }} \
               --singularity
 
     # TODO Build from Dockerfiles
