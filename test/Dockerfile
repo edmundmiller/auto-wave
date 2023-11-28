@@ -1,5 +1,4 @@
 FROM ubuntu:18.04
-LABEL author="Jon Gesell"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
