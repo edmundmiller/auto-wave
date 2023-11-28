@@ -64,8 +64,6 @@ jobs:
       - name: Build Singularity
         if: matrix.profile == 'singularity'
         run: |
-          wave --conda-file "${{ matrix.files }}" \
-              --await \
-              --singularity
+          echo TODO
 
     # TODO Build from Dockerfiles
