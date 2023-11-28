@@ -4,7 +4,6 @@ on:
   push:
   pull_request:
     paths:
-      - "**/Dockerfile"
       - "**/environment.yml"
 
 env:
@@ -25,7 +24,6 @@ jobs:
         with:
           json: true
           quotepath: false
-          # TODO Add Dockerfiles
           files: |
             **/environment.yml
       - name: Debug
