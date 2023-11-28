@@ -59,14 +59,12 @@ jobs:
         if: matrix.profile == 'docker'
         run: |
           wave --conda-file "${{ matrix.files }}" \
-              --freeze \
               --await
 
       - name: Build Singularity
         if: matrix.profile == 'singularity'
         run: |
           wave --conda-file "${{ matrix.files }}" \
-              --freeze \
               --await \
               --singularity
 
