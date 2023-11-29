@@ -16,12 +16,14 @@ on:
         options:
           - linux/amd64
           - linux/arm64
+      # TODO Add a optional url to a conda-lock/environment.yml?
 
 env:
   WAVE_VER: "1.1.0"
 
 jobs:
   build:
+    # FIXME Add a check that if the string is the default, just point to the container
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
