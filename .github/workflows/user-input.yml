@@ -44,7 +44,7 @@ jobs:
           sudo mv wave-${WAVE_VER}-linux-x86_64 /usr/local/bin/wave
           chmod +x /usr/local/bin/wave
 
-      - name: Parse out Conda packages and
+      - name: Parse out Conda packages
         uses: actions/github-script@v7
         id: parse-packages
         with:
