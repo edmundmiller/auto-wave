@@ -50,7 +50,7 @@ jobs:
         with:
           result-encoding: string
           script: |
-            return '${{ inputs.conda_packages }}'.replace(" ", " --conda-package ");
+            return "--conda-package " + '${{ inputs.conda_packages }}'.replace(" ", " --conda-package ");
 
       - name: Build container
         run: |
