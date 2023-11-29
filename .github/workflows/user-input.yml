@@ -54,7 +54,7 @@ jobs:
 
       - name: Build container
         run: |
-          wave "${{steps.parse-packages.outputs.result}}" \
+          wave ${{steps.parse-packages.outputs.result}} \
               --await
 
       - name: Build Singularity
