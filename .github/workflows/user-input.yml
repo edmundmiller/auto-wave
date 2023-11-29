@@ -52,12 +52,10 @@ jobs:
             return '${{ inputs.conda_packages }}'.replace(" ", " --conda-package ");
 
       - name: Build container
-        if: matrix.profile == 'docker'
         run: |
           wave "${{steps.parse-packages.outputs.result}}" \
               --await
 
       - name: Build Singularity
-        if: matrix.profile == 'singularity'
         run: |
           echo TODO
