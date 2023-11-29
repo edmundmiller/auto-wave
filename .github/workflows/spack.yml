@@ -55,7 +55,7 @@ jobs:
       - name: Build container
         if: matrix.profile == 'docker'
         run: |
-          wave --spack "${{ matrix.files }}" \
+          wave --spack-file "${{ matrix.files }}" \
               --await
 
       - name: Build Singularity
