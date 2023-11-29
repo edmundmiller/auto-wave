@@ -34,7 +34,7 @@ jobs:
           CONDA: ${{ inputs.conda_packages }}
           ARCHITECTURE: ${{ inputs.architecture }}
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
         # TODO Cache
       - name: Install wave-cli
