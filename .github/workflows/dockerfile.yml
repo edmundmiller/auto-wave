@@ -1,4 +1,4 @@
-name: Build containers
+name: Build Containers from Docker
 # When environment.yml is changed
 on:
   push:
