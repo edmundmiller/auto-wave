@@ -4,5 +4,7 @@ channels:
   - bioconda
   - defaults
 dependencies:
+  # renovate: datasource=conda depName=bioconda/bowtie
   - bioconda::bowtie=1.3.0
+  # renovate: datasource=conda depName=bioconda/samtools
   - bioconda::samtools=1.16.1
