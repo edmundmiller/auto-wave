@@ -1,0 +1,7 @@
+spack:
+  specs:
+    - star@2.5.4a
+    - bwa@0.7.15
+
+  concretizer:
+    unify: true
