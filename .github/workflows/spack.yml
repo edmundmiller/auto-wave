@@ -6,7 +6,7 @@ on:
       - "**/spack.yml"
 
 env:
-  WAVE_VER: "1.1.0"
+  WAVE_VER: "1.1.1"
 
 jobs:
   gen-matrix:
