@@ -20,7 +20,7 @@ on:
       # TODO Add a optional url to a conda-lock/environment.yml?
 
 env:
-  WAVE_VER: "1.1.0"
+  WAVE_VER: "1.1.1"
 
 jobs:
   build:
