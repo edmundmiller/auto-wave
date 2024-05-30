@@ -1,3 +1,7 @@
+> [!WARNING]
+> This project has been deprecated as it was a proof of concept.
+> Use [Seqera Containers](https://seqera.io/containers/) instead.
+
 # Auto-wave
 
 Build ad-hoc containers with bioinformatics software.
